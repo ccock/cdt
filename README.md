@@ -1,4 +1,4 @@
-# Eclipse CDT
+# Efficient Eclipse CDT
 
 ***
 

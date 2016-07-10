@@ -228,7 +228,7 @@ eclipse &
 
 ![export epf](./pics/export-epf.png)
 
-关于前面介绍的Code Formatter和全局配置我已经导出了，上传在[github](https://github.com/MagicBowen/eclipse-config)。
+关于前面介绍的Code Formatter和全局配置我已经导出了，见`export/code-formatter.xml`和`export/global-config.epf`。
 
 其中global-config.epf是全局配置，选择 `File -> Import -> General -> Preferences` 将其导入eclipse。
 

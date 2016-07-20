@@ -383,6 +383,8 @@ Perspective翻译过来是“透视图”，其实就是按照一定目的选择
 
 ![switch view](./pics/switch-view.gif)
 
+由于经常需要直接跳回`Editor`视图，所以有一个专门的快捷键`F12`用于帮助你从任何视图下直接跳回到`Editor`视图。
+
 如果说切换perspective的快捷键用的场景并不多，那么切换视图的快捷键使用场景那可是相当之多。很多人在`Editor`区域将快捷键使用的很好，但一旦要切换视图就必须去抓鼠标，掌握了这个快捷键基本上就可以让很多人直接过渡到全键盘了！
 
 #### Quick View
@@ -395,6 +397,14 @@ Perspective翻译过来是“透视图”，其实就是按照一定目的选择
 
 上面介绍的`Alt + Shift + N`会被经常用到，因为它除了可以快速创建文件，还可以快速创建工程、目录等。除此之外还有如下的quick view也非常有用：
 
+- 常用视图（Quick Views）
+
+	用`Alt + Shift + W`可以直接以quick view的方式显示常用的视图，可以通过上下方向键直接选择想要跳转到目标视图。
+
+	下例中我们通过这种快捷方式直接跳转到`C/C++ Projects`视图。
+
+    ![quick views](./pics/quick-views.gif)
+
 - 文件大纲（Outline View）
 
 	文件大纲视图一般位于`C/C++ Perspective`的最右侧，通过该视图我们可以看到当前文件的代码大纲，通过它可以直接跳到当前文件的任意符号处。
@@ -402,6 +412,14 @@ Perspective翻译过来是“透视图”，其实就是按照一定目的选择
     在`Editor`视图下我们可以通过`Ctrl + O`直接调出`Outline`的quick view，然后通过搜索或者上下键选择来跳转到本文件内的某一符号处。正是因为可以如此方便地调出quick outline，所以我一般会把`Editor`视图右边的辅助视图集窗口最小化以扩大代码区的面积。
 
     ![quick outline](./pics/quick-outline.gif)
+
+- 代码生成视图（Quick Implementation）
+
+	用`Alt + Shift + S`可以调出代码生成视图。利用该视图可以快捷地为代码添加头文件、格式化代码风格、自动为类成员生成get/set方法等。
+
+    如下使用该快捷视图为类的成员函数声明自动在cpp文件中生成实现原型。
+
+	![quick impl](./pics/quick-impl.gif)
 
 - 继承关系（Hierarchy View）
 
@@ -515,9 +533,5 @@ Eclipse主要的搜索快捷键如下：
 
 ## TODO
 
-- Alt + Shift + W : jump to file in explorer
-- Alt + Shift + S : add implementation
 - Ctrl + 3 : Quick Access, fonts, add include
-- F12 : jump to Editor
 - Ctrl + Shift + L
-- Alt + / : switch eg. format

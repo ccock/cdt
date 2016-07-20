@@ -513,4 +513,11 @@ Eclipse主要的搜索快捷键如下：
 
 本文总结了如何高效使用eclipse CDT进行C\++代码开发的一些经验，包括eclipse全局配置、工程配置以及常用的高效操作技巧。希望通过本文使得感兴趣的开发人员可以借助eclipse这个强大的IDE去更好地使用C\++这门强大的语言解决问题。
 
+## TODO
 
+- Alt + Shift + W : jump to file in explorer
+- Alt + Shift + S : add implementation
+- Ctrl + 3 : Quick Access, fonts, add include
+- F12 : jump to Editor
+- Ctrl + Shift + L
+- Alt + / : switch eg. format

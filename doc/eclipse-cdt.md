@@ -534,7 +534,7 @@ Eclipse主要的搜索快捷键如下：
 
 ![keys](./pics/keys.gif)
 
-还有一个最牛逼的命令`Ctrl + 3`，使用它可以调用`quick access`对任何属性、视图、命令进行查找、执行。
+最后还有一个大杀器：`Ctrl + 3`，使用它可以调用`quick access`对任何属性、视图、命令进行查找、执行。
 
 如下我们输入`Ctrl + 3`转到`quick access`，然后通过输入“font”查找并调出修改字体的全局配置框：
 

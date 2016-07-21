@@ -397,9 +397,9 @@ Perspective翻译过来是“透视图”，其实就是按照一定目的选择
 
 上面介绍的`Alt + Shift + N`会被经常用到，因为它除了可以快速创建文件，还可以快速创建工程、目录等。除此之外还有如下的quick view也非常有用：
 
-- 常用视图（Quick Views）
+- 常用视图集（Quick Views）
 
-	用`Alt + Shift + W`可以直接以quick view的方式显示常用的视图，可以通过上下方向键直接选择想要跳转到目标视图。
+	用`Alt + Shift + W`可以直接以quick view的方式显示常用的视图集合，可以通过上下方向键直接选择想要跳转到的目标视图。
 
 	下例中我们通过这种快捷方式直接跳转到`C/C++ Projects`视图。
 
@@ -417,7 +417,7 @@ Perspective翻译过来是“透视图”，其实就是按照一定目的选择
 
 	用`Alt + Shift + S`可以调出代码生成视图。利用该视图可以快捷地为代码添加头文件、格式化代码风格、自动为类成员生成get/set方法等。
 
-    如下使用该快捷视图为类的成员函数声明自动在cpp文件中生成实现原型。
+    如下使用该快捷视图为类的成员函数自动在cpp文件中生成实现原型。
 
 	![quick impl](./pics/quick-impl.gif)
 
@@ -491,7 +491,11 @@ Eclipse主要的搜索快捷键如下：
 
 ![copy lines](./pics/copy-lines.gif)
 
-- `Alt + /`：自动提示、补全符号，包括自定义的快捷代码块。如前面介绍全局配置的时候我们添加了`cn`的快捷代码块，如下我们敲`cn`后再敲`Alt + /`，它帮我们自动补全为“ClassName::”。
+- `Alt + /`：自动提示、补全符号，包括自定义的快捷代码块。如下输入`switch`后使用`Alt + /`，eclipse自动补全switch代码块。
+
+![quick switch](./pics/quick-switch.gif)
+
+自动补全还包括用户自定义的快捷代码块。如前面介绍全局配置的时候我们添加了`cn`的快捷代码块，如下输入`cn`后再敲`Alt + /`，它帮我们自动补全为“ClassName::”。
 
 ![auto class name](./pics/auto-cn.gif)
 
@@ -503,17 +507,18 @@ Eclipse主要的搜索快捷键如下：
 - `Ctrl + Alt + A`：进入或者退出列编辑模式
 
 列编辑模式有时会很有用，如下图所示：
+
 ![colume edit](./pics/colume-edit.gif)
 
 除了上述快捷键外，还有一些是专门针对C/C\++语言特征的。
 
 - `Ctrl + Shift + N`：自动添加光标所在处符号对应的头文件。
 
-![auto include](./pics/auto-include.gif)
+    ![auto include](./pics/auto-include.gif)
 
 - `Ctrl + =`：自动宏展开提示。
 
-![auto macro](./pics/auto-macro.gif)
+    ![auto macro](./pics/auto-macro.gif)
 
 - `Alt + Shift + R`：自动重命名
 
@@ -525,13 +530,22 @@ Eclipse主要的搜索快捷键如下：
 
 #### Others
 
-前面介绍的快捷键只是我挑选出来最常使用的一部分，但是相信熟练掌握这些足以让你的编码效率得到较大提高。补充说明一下，上述所有快捷键适合linux和windows系统，Mac下得要做一些调整，具体查看mac版本eclipse的快捷键设置。
+本节介绍了非常多的快捷键，如果忘记了，可以输入`Ctrl + Shift + L`调出快捷键列表查看，并可以直接选择执行。
+
+![keys](./pics/keys.gif)
+
+还有一个最牛逼的命令`Ctrl + 3`，使用它可以调用`quick access`对任何属性、视图、命令进行查找、执行。
+
+如下我们输入`Ctrl + 3`转到`quick access`，然后通过输入“font”查找并调出修改字体的全局配置框：
+
+![quick access 1](./pics/quick-access1.gif)
+
+下例中我们通过`quick access`查找添加头文件的命令，然后运行其为我们自动添加了缺失的头文件：
+
+![quick access](./pics/quick-access.gif)
+
+本节的所有介绍就到这里，所提到的快捷键是我挑选出来最常使用的一部分，相信熟练掌握这些足以让你的编码效率得到很大提高。补充说明一下，上述所有快捷键适合linux和windows系统，mac下得要做一些调整，具体查看mac版本eclipse的快捷键设置。
 
 ## Conclusion
 
 本文总结了如何高效使用eclipse CDT进行C\++代码开发的一些经验，包括eclipse全局配置、工程配置以及常用的高效操作技巧。希望通过本文使得感兴趣的开发人员可以借助eclipse这个强大的IDE去更好地使用C\++这门强大的语言解决问题。
-
-## TODO
-
-- Ctrl + 3 : Quick Access, fonts, add include
-- Ctrl + Shift + L
